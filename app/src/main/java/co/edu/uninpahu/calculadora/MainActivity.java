@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button seven = (Button) findViewById(R.id.btn7);
         Button eigth = (Button) findViewById(R.id.btn8);
         Button nine = (Button) findViewById(R.id.btn9);
+        Button reset = (Button) findViewById(R.id.btn_cls);
         zero.setOnClickListener(this);
         one.setOnClickListener(this);
         two.setOnClickListener(this);
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         seven.setOnClickListener(this);
         eigth.setOnClickListener(this);
         nine.setOnClickListener(this);
+        reset.setOnClickListener(this);
     }
 
     @Override
@@ -77,6 +79,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn9:
                 result.append("9");
                 break;
+            case R.id.btn_cls:
+                result.setText(null);
             default:
                 break;
         }
