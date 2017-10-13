@@ -20,28 +20,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button zero = (Button) findViewById(R.id.btn0);
-        Button one = (Button) findViewById(R.id.btn1);
-        Button two = (Button) findViewById(R.id.btn2);
-        Button three = (Button) findViewById(R.id.btn3);
-        Button four = (Button) findViewById(R.id.btn4);
-        Button five = (Button) findViewById(R.id.btn5);
-        Button six = (Button) findViewById(R.id.btn6);
-        Button seven = (Button) findViewById(R.id.btn7);
-        Button eigth = (Button) findViewById(R.id.btn8);
-        Button nine = (Button) findViewById(R.id.btn9);
-        Button reset = (Button) findViewById(R.id.btn_cls);
-        zero.setOnClickListener(this);
-        one.setOnClickListener(this);
-        two.setOnClickListener(this);
-        three.setOnClickListener(this);
-        four.setOnClickListener(this);
-        five.setOnClickListener(this);
-        six.setOnClickListener(this);
-        seven.setOnClickListener(this);
-        eigth.setOnClickListener(this);
-        nine.setOnClickListener(this);
-        reset.setOnClickListener(this);
+        findViewById(R.id.btn0).setOnClickListener(this);
+        findViewById(R.id.btn1).setOnClickListener(this);
+        findViewById(R.id.btn2).setOnClickListener(this);
+        findViewById(R.id.btn3).setOnClickListener(this);
+        findViewById(R.id.btn4).setOnClickListener(this);
+        findViewById(R.id.btn5).setOnClickListener(this);
+        findViewById(R.id.btn6).setOnClickListener(this);
+        findViewById(R.id.btn7).setOnClickListener(this);
+        findViewById(R.id.btn8).setOnClickListener(this);
+        findViewById(R.id.btn9).setOnClickListener(this);
+        findViewById(R.id.btn_cls).setOnClickListener(this);
     }
 
     @Override
